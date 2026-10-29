@@ -1,0 +1,121 @@
+
+/* Configuração geral */
+body {
+    background-color: #d9e2f3;
+    font-family: Arial, sans-serif;
+    color: #222;
+}
+
+/* Título principal */
+.title-box {
+    background-color: #fff2cc;
+    border: 2px solid #b7b7b7;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+/* Foto de perfil */
+.profile-img {
+    width: 100%;
+    max-width: 260px;
+    height: auto;
+    object-fit: cover;
+    border: 3px solid #999;
+}
+
+/* Accordions */
+.accordion {
+    border: 2px solid #b7b7b7;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+}
+
+/* Cada item */
+.accordion-item {
+    border: 0;
+    border-bottom: 1px solid #b7b7b7;
+}
+
+.accordion-item:last-child {
+    border-bottom: 0;
+}
+
+/* Cabeçalho dos accordions */
+.accordion-button {
+    background-color: #fff2cc;
+    color: #222;
+    font-weight: bold;
+    padding: 18px;
+}
+
+/* Cabeçalho aberto */
+.accordion-button:not(.collapsed) {
+    background-color: #ffe6a3;
+    color: #222;
+    box-shadow: none;
+}
+
+/* Contorno ao navegar pelo teclado */
+.accordion-button:focus {
+    border-color: #b7b7b7;
+    box-shadow: 0 0 0 3px rgba(183, 183, 183, 0.3);
+}
+
+/* Conteúdo dos accordions */
+.accordion-body {
+    background-color: #fff;
+    padding: 22px;
+    line-height: 1.7;
+}
+
+/* Ícones das redes sociais */
+.sites a {
+    display: inline-block;
+}
+
+.site-icon {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    transition: transform 0.2s ease-in-out;
+}
+
+.site-icon:hover {
+    transform: scale(1.12);
+}
+
+/* Tabela */
+.table {
+    border-color: #999;
+}
+
+.table th {
+    background-color: #fff2cc;
+    color: #222;
+}
+
+.table td {
+    background-color: #fff;
+}
+
+/* Ajustes para celular */
+@media (max-width: 767.98px) {
+    .title-box {
+        font-size: 1.4rem;
+    }
+
+    .profile-img {
+        max-width: 200px;
+    }
+
+    .accordion-body {
+        padding: 16px;
+        font-size: 0.95rem;
+    }
+
+    .site-icon {
+        width: 50px;
+        height: 50px;
+    }
+}
